@@ -30,7 +30,7 @@ app = Flask(__name__)
 def snowplow():
     indata = request.json
 
-    e = Emitter(os.environ["SP_COLLECTOR_URI"],protocol=os.environ["SP_COLLECTOR_PROTOCOL"],port=os.environ["SP_COLLECTOR_PORT"],method=os.environ["SP_COLLECTOR_METHOD"])
+    e = Emitter(os.environ["SP_COLLECTOR_URI"],protocol=os.environ["SP_COLLECTOR_PROTOCOL"],port=int(os.environ["SP_COLLECTOR_PORT"]),method=os.environ["SP_COLLECTOR_METHOD"])
     t = Tracker(emitters=e,namespace="cf",app_id=str(indata["i_app_id"]),encode_base64=True)
    
     s1 = Subject()
