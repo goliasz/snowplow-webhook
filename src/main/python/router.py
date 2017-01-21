@@ -26,7 +26,7 @@ from snowplow_tracker import Subject, Emitter, Tracker, SelfDescribingJson
 app = Flask(__name__)
 
 # snowplow
-@app.route('/api/v1.0/snowplow', methods=['POST'])
+@app.route('/api/v1.0/sp', methods=['POST'])
 def snowplow():
     indata = request.json
 
