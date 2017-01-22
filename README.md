@@ -1,3 +1,5 @@
+[![](https://images.microbadger.com/badges/image/goliasz/snowplow-webhook.svg)](https://microbadger.com/images/goliasz/snowplow-webhook "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/goliasz/snowplow-webhook.svg)](https://microbadger.com/images/goliasz/snowplow-webhook "Get your own version badge on microbadger.com")
 
 # snowplow-webhook
 
